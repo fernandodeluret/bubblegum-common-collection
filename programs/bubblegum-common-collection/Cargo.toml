@@ -1,0 +1,22 @@
+[package]
+name = "bubblegum-common-collection"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "bubblegum_common_collection"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build"]
+
+[dependencies]
+anchor-lang = "0.30.0"
+mpl-bubblegum = "1.4.0"
+mpl-token-metadata = "4.1.2"
